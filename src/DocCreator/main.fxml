@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="1.7976931348623157E308" prefWidth="600.0" vgap="10.0"
+          xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DocCreator.Controller">
+  <columnConstraints>
+    <ColumnConstraints hgrow="ALWAYS" maxWidth="200.0" minWidth="75.0"/>
+    <ColumnConstraints minWidth="10.0" prefWidth="400.0"/>
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="50.0" minHeight="50.0"/>
+    <RowConstraints maxHeight="50.0" minHeight="10.0"/>
+    <RowConstraints maxHeight="50.0" minHeight="35.0"/>
+    <RowConstraints maxHeight="50.0" minHeight="35.0"/>
+    <RowConstraints maxHeight="50.0" minHeight="10.0"/>
+    <RowConstraints maxHeight="50.0" minHeight="35.0"/>
+    <RowConstraints maxHeight="150.0" minHeight="35.0" vgrow="ALWAYS"/>
+    <RowConstraints maxHeight="150.0" minHeight="35.0"/>
+    <RowConstraints maxHeight="150.0" minHeight="35.0"/>
+    <RowConstraints maxHeight="150.0" minHeight="5.0"/>
+    <RowConstraints maxHeight="150.0" minHeight="35.0"/>
+  </rowConstraints>
+    <Label text="TSA Doc Creator" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER"
+           GridPane.rowSpan="2" GridPane.valignment="CENTER">
+      <font>
+        <Font name="Segoe UI Semilight" size="30.0"/>
+      </font>
+    </Label>
+    <TextField fx:id="name" styleClass="textbox" stylesheets="@main.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+      <font>
+        <Font name="Segoe UI Light" size="16.0"/>
+      </font>
+      <GridPane.margin>
+        <Insets right="25.0"/>
+      </GridPane.margin>
+    </TextField>
+    <Label text="Project Name" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+      <font>
+        <Font name="Segoe UI Light" size="18.0"/>
+      </font>
+      <GridPane.margin>
+        <Insets left="25.0"/>
+      </GridPane.margin>
+    </Label>
+    <Separator prefWidth="500.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1"/>
+    <Label text="Classification Number" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+      <font>
+        <Font name="Segoe UI Light" size="18.0"/>
+      </font>
+      <GridPane.margin>
+        <Insets left="25.0"/>
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="classification" styleClass="textbox" stylesheets="@main.css" GridPane.columnIndex="1"
+               GridPane.rowIndex="3">
+      <font>
+        <Font name="Segoe UI Light" size="16.0"/>
+      </font>
+      <GridPane.margin>
+        <Insets right="25.0"/>
+      </GridPane.margin>
+    </TextField>
+    <Label text="Procedure" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="TOP">
+      <font>
+        <Font name="Segoe UI Light" size="18.0"/>
+      </font>
+      <GridPane.margin>
+        <Insets left="25.0"/>
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="problem" styleClass="textbox" stylesheets="@main.css" GridPane.columnIndex="1"
+               GridPane.rowIndex="5">
+      <font>
+        <Font name="Segoe UI Light" size="16.0"/>
+      </font>
+      <GridPane.margin>
+        <Insets right="25.0"/>
+      </GridPane.margin>
+    </TextField>
+    <TextArea fx:id="procedure" maxHeight="600.0" styleClass="textbox" stylesheets="@main.css" wrapText="true"
+              GridPane.columnIndex="1" GridPane.rowIndex="6" GridPane.vgrow="ALWAYS">
+      <GridPane.margin>
+        <Insets right="25.0"/>
+      </GridPane.margin>
+      <font>
+        <Font name="Segoe UI Light" size="16.0"/>
+      </font>
+    </TextArea>
+    <Label text="Problem" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+      <font>
+        <Font name="Segoe UI Light" size="18.0"/>
+      </font>
+      <GridPane.margin>
+        <Insets left="25.0"/>
+      </GridPane.margin>
+    </Label>
+    <Separator GridPane.columnIndex="1" GridPane.rowIndex="4">
+      <GridPane.margin>
+        <Insets right="25.0"/>
+      </GridPane.margin>
+    </Separator>
+    <Label text="Result" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+      <font>
+        <Font name="Segoe UI Light" size="18.0"/>
+      </font>
+      <GridPane.margin>
+        <Insets left="25.0"/>
+      </GridPane.margin>
+    </Label>
+    <TextField fx:id="result" styleClass="textbox" stylesheets="@main.css" GridPane.columnIndex="1"
+               GridPane.rowIndex="7">
+      <font>
+        <Font name="Segoe UI Light" size="16.0"/>
+      </font>
+      <GridPane.margin>
+        <Insets right="25.0"/>
+      </GridPane.margin>
+    </TextField>
+    <Button id="submitButton" fx:id="submitButton" mnemonicParsing="false" styleClass="submit-button"
+            stylesheets="@main.css" text="Create Documentation" GridPane.columnIndex="1" GridPane.halignment="RIGHT"
+            GridPane.rowIndex="8">
+      <GridPane.margin>
+        <Insets bottom="10.0" right="25.0" top="10.0"/>
+      </GridPane.margin>
+      <font>
+        <Font name="Segoe UI Semilight" size="18.0"/>
+      </font>
+    </Button>
+    <Separator prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="9"/>
+    <Label text="Created by Aahlad Madireddy" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER"
+           GridPane.rowIndex="9" GridPane.rowSpan="2">
+      <font>
+        <Font name="Segoe UI Light" size="15.0"/>
+      </font>
+    </Label>
+</GridPane>

@@ -1,0 +1,15 @@
+.submit-button {
+    -fx-background-color: #fafafa;
+    -fx-border-width: 2px;
+    -fx-border-color: rgb(100, 100, 100);
+    -fx-border-radius: 3px;
+    -fx-animated: true;
+}
+
+.submit-button:hover {
+    -fx-border-color: #0493da;
+}
+
+.submit-button:pressed {
+    -fx-background-color: #bababa;
+}
